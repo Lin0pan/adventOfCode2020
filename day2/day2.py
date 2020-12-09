@@ -1,6 +1,6 @@
 import re
 
-def importNumbers(file):
+def importPasswords(file):
     f = open(file, "r")
     pws = f.readlines()
     f.close()
@@ -23,7 +23,7 @@ def countMatches(pws):
     return n
 
 def main():
-    pws = importNumbers('input.txt')
+    pws = importPasswords('input.txt')
     print(countMatches(pws))
 
 if __name__ == "__main__":
